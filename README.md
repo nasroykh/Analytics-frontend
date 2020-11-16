@@ -6,4 +6,5 @@ Website created from an existing web design on Figma, using :
   -SASS
 
 Designer : Valery Zanimanski
+
 Design URL : https://www.figma.com/community/file/905814382591046401
