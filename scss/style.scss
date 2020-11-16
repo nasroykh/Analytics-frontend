@@ -1,0 +1,65 @@
+@import 'config';
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p, a, button {
+    color: $textSecondary;
+    text-decoration: none;
+}
+
+.bgTop {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bgBottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+body {
+    background-color: #F8F9FF;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    header {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 50;
+    }
+
+    main {
+        z-index: 52;
+        width: 75%;
+
+        
+
+    }
+
+    footer {
+        z-index: 53;
+        width: 75%;
+    }
+
+}
