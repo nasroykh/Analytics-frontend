@@ -14,7 +14,9 @@
 <body>
 	<header>
 		<div class="header-menu">
-			<img src="images/logo.svg" alt="">
+			<a href="#">
+				<img src="images/logo.svg" alt="" />
+			</a>
 			<nav class="nav--top">
 				<ul>
 					<li><a href="">Products</a></li>
@@ -24,12 +26,12 @@
 				</ul>
 			</nav>
 			<span>
-				<button class="btn">Sign In</button>
+				<button class="btn btn-si">Sign In</button>
 				<button class="btn">Sign Up</button>
 			</span>
 		</div>
 		<div class="header-content">
-			<span>
+			<span class="main-screen-text">
 				<h1>Monitor your business on real-time dashboard</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Elementum nisi aliquet volutpat pellentesque volutpat est.
@@ -37,7 +39,7 @@
 				</p>
 				<button class="btn">Try for free</button>
 			</span>
-			<img src="images/main-screen.svg" alt="" width="50%">
+			<img src="images/main-screen.svg" alt="" width="50%" class="main-screen-image" />
 		</div>
 
 	</header>
@@ -172,7 +174,9 @@
 		<hr><hr/>
 
 		<div class="footer-menu">
-			<img src="images/logo (Monochrome).svg" alt="">
+			<a href="#">
+				<img src="images/logo (Monochrome).svg" alt="">
+			</a>
 
 			<nav class="nav--bottom">
 				<ul>
@@ -186,13 +190,19 @@
 			<span class="socialnetworks">
 				<ul>
 					<li>
-						<img src="images/Facebook.svg" alt="">
+						<a href="#">
+							<img src="images/Facebook.svg" alt="">
+						</a>
 					</li>
 					<li>
-						<img src="images/Twitter.svg" alt="">
+						<a href="#">
+							<img src="images/Twitter.svg" alt="">
+						</a>
 					</li>
 					<li>
-						<img src="images/Instagram.svg" alt="">
+						<a href="#">
+							<img src="images/Instagram.svg" alt="">
+						</a>
 					</li>
 				</ul>
 			</span>
@@ -200,6 +210,14 @@
 
 	</footer>
 
+	<script>
+		const mainScreenImage = document.querySelector(".main-screen-image");
+		const mainScreenText = document.querySelector(".main-screen-text");
+		window.addEventListener("load", () => {
+			mainScreenImage.style.transform = "translateX(0)";
+			mainScreenText.style.transform = "translateX(0)";
+		});
+	</script>
 </body>
 
 </html>

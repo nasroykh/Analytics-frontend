@@ -36,9 +36,11 @@ body {
     font-size: 16px;
     background-color: #F8F9FF;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
-
+.logo {
+}
 
 .btn {
     border: 1px solid rgba(128, 128, 128, 0.3);
@@ -48,6 +50,23 @@ body {
     width: 150px;
     height: 50px;
     cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    transform: scale(1.05,1.05);
+    background-color: $secondaryColor;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    transition: color 250ms;
+    cursor: pointer;
+}
+
+.btn-si {
+    border: none;
 }
 
 header {
@@ -90,6 +109,20 @@ header {
         width: 100%;
         align-items: center;
         margin-top: 50px;
+
+        .main-screen-image {
+            transform: translateX(100%);
+            transition: transform 1s ease-in-out;
+            transition-delay: 100ms;
+        }
+
+        .main-screen-text {
+            transform: translateX(-140%);
+            transition: transform 1s ease-in-out;
+            transition-delay: 100ms;
+        }
+
+        
 
         span {
             margin-left: 185px;
@@ -285,6 +318,11 @@ footer {
             
             li {
                 margin: 20px;
+                transition: transform 1s;
+            }
+
+            li:hover {
+                transform: scale(1.25,1.25);
             }
         }
 
